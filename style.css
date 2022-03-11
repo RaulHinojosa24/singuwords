@@ -1,0 +1,76 @@
+:root {
+    --color-correct: rgba(106, 170, 100);
+    --color-present: rgba(201, 180, 88);
+    --color-wrong: rgba(120, 124, 126);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+header h1 {
+    text-align: center;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.tile {
+    border: 2px rgba(128, 128, 128, 0.5) solid;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tile.fill {
+    border: 2px solid black;
+}
+
+.tile.correct {
+    color: white;
+    background-color: var(--color-correct);
+    border: 0;
+}
+
+.tile.present {
+    color: white;
+    background-color: var(--color-present);
+    border: 0;
+}
+
+.tile.wrong {
+    color: white;
+    background-color: var(--color-wrong);
+    border: 0;
+}
